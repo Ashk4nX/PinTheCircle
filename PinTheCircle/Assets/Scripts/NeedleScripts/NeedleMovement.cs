@@ -64,7 +64,7 @@ public class NeedleMovement : MonoBehaviour {
 			CanFireNeedle = false;
 			MyBody.isKinematic = true;
 			NeedleTouchedTheCircle = true;
-
+			gameObject.transform.SetParent (target.transform);
 		}
 
 	}
