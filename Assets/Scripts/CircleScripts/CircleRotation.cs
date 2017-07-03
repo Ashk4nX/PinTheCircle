@@ -21,7 +21,7 @@ public class CircleRotation : MonoBehaviour {
 		if (canRotate == true) {
 
 			RotateTheCircle ();
-
+			
 		}
 	
 	}

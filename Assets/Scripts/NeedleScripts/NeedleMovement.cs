@@ -3,8 +3,9 @@ using System.Collections;
 
 public class NeedleMovement : MonoBehaviour {
 
-	[SerializeField]
-	private GameObject NeedleBody;
+
+	//[SerializeField]
+	//private GameObject NeedleBody;
 
 	private float SpeedY = 5f;
 	private bool CanFireNeedle;
@@ -19,7 +20,7 @@ public class NeedleMovement : MonoBehaviour {
 
 	void Start ()
 	{
-		FireTheNeedle ();
+
 	}
 
 	void Initialize ()
@@ -29,7 +30,7 @@ public class NeedleMovement : MonoBehaviour {
 
 	}
 
-	void FireTheNeedle ()
+	public void FireTheNeedle ()
 	{
 
 		MyBody.isKinematic = false;
@@ -63,8 +64,15 @@ public class NeedleMovement : MonoBehaviour {
 			Debug.Log ("Needle Touched the Circle");
 			CanFireNeedle = false;
 			MyBody.isKinematic = true;
+			MyBody.simulated = false;
 			NeedleTouchedTheCircle = true;
 			gameObject.transform.SetParent (target.transform);
+
+			if (GameManager.Instance != null) {
+
+				GameManager.Instance.InstantiateNeedle();
+
+			}
 		}
 
 	}

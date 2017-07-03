@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a38c54ca9143e4845b2b922c69f4b74e
+timeCreated: 1498833929
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: IRANSans
+  fontNames:
+  - IRANSans
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0d03d864d5b8897448066cd485f6f8fd, type: 3}
+  - {fileID: 12800000, guid: 8291e2351c066134f8ee9b0c03234687, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
